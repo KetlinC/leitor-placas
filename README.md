@@ -18,4 +18,8 @@ Identificar veículos que entram no hospital, capturar:
 - requirements.txt: dependências do projeto
 
 ## 🚧 Status do projeto
-🔄 Em desenvolvimento – Semana 1
+🔄 Em desenvolvimento 
+
+### 📅 Progresso
+- ✅ Semana 1 – Estrutura inicial e leitura de imagem
+- 🔄 Semana 2 – Pré-processamento de imagem (cinza, blur e bordas)
