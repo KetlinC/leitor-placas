@@ -22,4 +22,6 @@ Identificar veículos que entram no hospital, capturar:
 
 ### 📅 Progresso
 - ✅ Semana 1 – Estrutura inicial e leitura de imagem
-- 🔄 Semana 2 – Pré-processamento de imagem (cinza, blur e bordas)
+- ✅ Semana 2 – Pré-processamento de imagem (cinza, blur e bordas)
+- ✅ Semana 3 – Detecção de regiões candidatas à placa
+
