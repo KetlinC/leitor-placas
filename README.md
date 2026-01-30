@@ -25,7 +25,7 @@ Identificar veículos que entram no hospital, capturar:
 - ✅ Semana 1 – Estrutura inicial e leitura de imagem
 - ✅ Semana 2 – Pré-processamento de imagem (cinza, blur e bordas)
 - ✅ Semana 3 – Detecção de regiões candidatas à placa
-- ✅ Semana 4 - Filtragem de contornos e identificação da região da placa (Em andamento)
+- ✅ Semana 4 - Filtragem de contornos e identificação da região da placa 
 
 ## 📝 Observação
 Este projeto faz parte de um processo de aprendizado contínuo. O código será refatorado e expandido conforme o avanço das próximas etapas.
