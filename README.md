@@ -29,3 +29,6 @@ Identificar veículos que entram no hospital, capturar:
 
 ## 📝 Observação
 Este projeto faz parte de um processo de aprendizado contínuo. O código será refatorado e expandido conforme o avanço das próximas etapas.
+
+⚠️ A detecção por contornos é utilizada como abordagem didática.
+Para cenários reais, o projeto prevê o uso de modelos de Deep Learning.

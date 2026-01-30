@@ -75,15 +75,28 @@ placa = None
 #Desenhando o contorno e cortando a placa
 imagem_placa_destacada = img_redimensionada.copy()     
 if melhor_cnt is not None:
-    placa = img_redimensionada[melhor_y:melhor_y + melhor_altura, 
-                           melhor_x:melhor_x + melhor_largura]
     cv2.drawContours(imagem_placa_destacada, [melhor_cnt], -1, (0, 0, 255), 3)
     print("Placa encontrada")
+
+    placa = img_redimensionada[melhor_y:melhor_y + melhor_altura, 
+                           melhor_x:melhor_x + melhor_largura]
+    
+    #Converter placa para tons de cinza
+    placa_cinza = cv2.cvtColor(placa, cv2.COLOR_BGR2GRAY)
+
+    #Aumento do contraste da placa
+    placa_contraste = cv2.adaptiveThreshold(
+        placa_cinza, 255, 
+        cv2.ADAPTIVE_THRESH_MEAN_C,
+        cv2.THRESH_BINARY, 33, 9)
+
+
+
 
 
 #Junta imagem dos contornos e da placa desenhada e mostra
 imagem_resultado = np.vstack([
-    np.hstack([imagem_contornos, imagem_placa_destacada])
+    np.hstack([placa_cinza , placa_contraste])
 ])
 cv2.imshow("Resultado", imagem_resultado)
 
